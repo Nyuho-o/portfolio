@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Portfolio.">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&display=swap">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./portfolio.js" defer></script>
+</head>
+<body>
+  <main class="hero" aria-labelledby="titre">
+    <div class="scene">
+      <div class="scene-poster">
+        <div class="poster-plate" style="--plate:0;--x:29%;--y:-13%;--tilt:-44deg;--turn:37deg;--light:1"><a class="plate-cover" href="./projets/piramide.html" aria-label="Piramide"><img src="./assets/piramide-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:1;--x:39%;--y:5%;--tilt:-36deg;--turn:29deg;--light:.78"><a class="plate-cover" href="./projets/squary.html" aria-label="Squary"><img src="./assets/squary-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:2;--x:48%;--y:22%;--tilt:-27deg;--turn:15deg;--light:.45"><a class="plate-cover" href="./projets/illustrations.html" aria-label="Illustration et dessin"><img src="./assets/illustrations-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:3;--x:57%;--y:36%;--tilt:-17deg;--turn:-3deg;--light:.9"><a class="plate-cover" href="./projets/calanques.html" aria-label="Calanques"><img src="./assets/calanques-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:4;--x:62%;--y:40%;--tilt:-15deg;--turn:-12deg;--light:.8"><a class="plate-cover" href="./projets/affiches.html" aria-label="Affiches"><img src="./assets/affiches-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:5;--x:67%;--y:44%;--tilt:-12deg;--turn:-22deg;--light:.65"><a class="plate-cover" href="./projets/catalogue-cse.html" aria-label="Catalogue CSE"><img src="./assets/catalogue-cse-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:6;--x:76%;--y:47%;--tilt:-9deg;--turn:-32deg;--light:.54"><a class="plate-cover" href="./projets/isanabi.html" aria-label="Isanabi"><img src="./assets/isanabi-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:7;--x:85%;--y:46%;--tilt:-12deg;--turn:-42deg;--light:1"><a class="plate-cover" href="./projets/spirits.html" aria-label="Spirits"><img src="./assets/spirits-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:8;--x:93%;--y:42%;--tilt:-19deg;--turn:-46deg;--light:.78"><a class="plate-cover" href="./projets/vol-demotion.html" aria-label="Vol d’émotion"><img src="./assets/vol-demotion-carre.webp" width="576" height="576" alt=""></a></div>
+        <div class="poster-plate" style="--plate:9;--x:100%;--y:35%;--tilt:-23deg;--turn:-57deg;--light:.5"><a class="plate-cover" href="./projets/logiciels.html" aria-label="Logiciels"><img src="./assets/logiciels-carre.webp" width="576" height="576" alt=""></a></div>
+      </div>
+      <div class="scene-surface" aria-hidden="true"></div>
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <!-- Pour afficher une image à chaque visite, renseigner data-src et le texte alt. -->
+    <img class="hero-image" data-src="" alt="" hidden>
+
+    <header class="hero-header">
+      <div class="hero-tools" hidden>
+        <button class="tool motion-tool" type="button" aria-label="Mettre l’animation en pause">
+          <span class="tool-icon motion-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <details class="project-index">
+        <summary>Projets</summary>
+        <nav aria-label="Projets">
+          <ul>
+            <li><a href="./projets/calanques.html" data-cover="./assets/calanques-carre.webp">Calanques</a></li>
+            <li><a href="./projets/carte-felicitations.html" data-cover="./assets/carte-felicitations-carre.webp">Carte de félicitations</a></li>
+            <li><a href="./projets/catalogue-cse.html" data-cover="./assets/catalogue-cse-carre.webp">Catalogue CSE</a></li>
+            <li><a href="./projets/jbv-construction.html" data-cover="./assets/jbv-carre-masque.webp">JBV Construction</a></li>
+            <li><a href="./projets/isanabi.html" data-cover="./assets/isanabi-carre.webp">Isanabi</a></li>
+            <li><a href="./projets/luminous-odyssey.html" data-cover="./assets/luminous-odyssey-carre.webp">Luminous Odyssey</a></li>
+            <li><a href="./projets/spirits.html" data-cover="./assets/spirits-carre.webp">Spirits</a></li>
+            <li><a href="./projets/helmet-of-time.html" data-cover="./assets/helmet-of-time-carre.webp">Helmet of time</a></li>
+            <li><a href="./projets/vol-demotion.html" data-cover="./assets/vol-demotion-carre.webp">Vol d’émotion</a></li>
+            <li><a href="./projets/regard-remake.html" data-cover="./assets/regard-remake-carre.webp">Regard remake</a></li>
+            <li><a href="./projets/logiciels.html" data-cover="./assets/logiciels-carre.webp">Logiciels</a></li>
+            <li><a href="./projets/piramide.html" data-cover="./assets/piramide-carre.webp">Piramide</a></li>
+            <li><a href="./projets/from-object-to-feelings.html" data-cover="./assets/from-object-to-feelings-carre.webp">From object to feelings</a></li>
+            <li><a href="./projets/squary.html" data-cover="./assets/squary-carre.webp">Squary</a></li>
+            <li><a href="./projets/illustrations.html" data-cover="./assets/illustrations-carre.webp">Illustration et dessin</a></li>
+            <li><a href="./projets/affiches.html" data-cover="./assets/affiches-carre.webp">Affiches</a></li>
+            <li><a href="./projets/chateau-minecraft.html" data-cover="./assets/chateau-minecraft-carre.webp">Château Minecraft</a></li>
+          </ul>
+        </nav>
+      </details>
+      <a class="contact" href="mailto:vasco.martin2004@gmail.com">Contact <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <div class="hero-title">
+      <h1 id="titre">Portfolio</h1>
+      <p class="hero-name">Vasco Martin</p>
+    </div>
+  </main>
+</body>
+</html>
