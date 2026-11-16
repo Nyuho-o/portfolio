@@ -1,0 +1,38 @@
+name: Publier le portfolio
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dist/**'
+      - '.github/workflows/static.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    steps:
+      - name: Récupérer les fichiers
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Configurer GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Préparer le site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Publier le site
+        id: publish
+        uses: actions/deploy-pages@v5
